@@ -8,7 +8,7 @@
 
             <h2><?php the_title(); ?></h2>
             
-            <p>$<?php echo $price; ?></p>
+            <p>$<?php echo $price; ?>,00</p>
         </div>
     <?php endwhile; ?>
 </div>
