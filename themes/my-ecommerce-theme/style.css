@@ -57,7 +57,6 @@ body {
 header {
     width: 100%;
     height: auto;
-    background-color: var(--background-color);
     position: fixed;
     top: 20px;
     left: 0;
@@ -143,7 +142,6 @@ header {
 .container {
     max-width: var(--maxw);
     margin: 0 auto;
-    margin-top: 80px;
 }
 
 
