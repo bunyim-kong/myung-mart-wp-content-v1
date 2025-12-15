@@ -2,7 +2,7 @@
 <footer>
     <div class="footer-content">
         <div class="footer-infor">
-            <a href=""><img src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>" /></a>
+            <a href=""><img src="<?php echo get_template_directory_uri() . '/asset/images/logo.png'; ?>" /></a>
             <p class="infor-p">Bringing you the finest Korean products, carefully selected to ensure quality and authenticity. We strive to deliver beauty, care, and happiness with every order</p>
         </div>
 

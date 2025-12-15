@@ -9,7 +9,7 @@
     <nav class="navbar">
         <div class="nav-logo">
             <a href="<?php echo home_url(); ?>">
-                <img src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>" alt="<?php bloginfo('name'); ?>" />
+                <img src="<?php echo get_template_directory_uri() . '/asset/images/logo.png'; ?>" alt="<?php bloginfo('name'); ?>" />
             </a>
         </div>
 
