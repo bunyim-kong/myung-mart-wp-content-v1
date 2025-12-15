@@ -60,6 +60,25 @@
     <h1>Our Best Features</h1>
 
     <div class="feature-content">
-        
+        <?php
+        $query = new WP_Query([
+            'post_type' => 'product',
+            'posts_per_page' => 8,
+        ]);
+        ?>
+
+        <div class="products">
+            <?php while ($query->have_posts()) : $query->the_post(); ?>
+                <div class="product">
+                    <a href="<?php the_permalink(); ?>">
+                        <?php the_post_thumbnail('medium'); ?>
+                    </a>
+                    <h2><?php the_title(); ?></h2>
+                    <p>$<?php echo get_post_meta(get_the_ID(), '_price', true); ?></p>
+                </div>
+            <?php endwhile; ?>
+        </div>
+
+        <?php wp_reset_postdata(); ?>
     </div>
 </section>
