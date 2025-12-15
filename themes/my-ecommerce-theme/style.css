@@ -9,7 +9,6 @@
     --card-secondary-color: #F6F6F6;
 
     --btn-primary-bg: #060606;
-    --btn-highlight-bg: #ffffff;
     --btn-hover: #FAAA4C;
 
     --btn-secondary-bg: #F0ECE7;
@@ -57,10 +56,17 @@ body {
 header {
     width: 100%;
     height: auto;
+<<<<<<< HEAD
     position: fixed;
     top: 20px;
     left: 0;
     z-index: 1000;
+=======
+    background-color: var(--background-color);
+    position: fixed;
+    top: 40px;
+    left: 0;
+>>>>>>> 737eda0 (test)
 }
 
 .navbar {
@@ -142,6 +148,10 @@ header {
 .container {
     max-width: var(--maxw);
     margin: 0 auto;
+<<<<<<< HEAD
+=======
+    margin-top: 80px;
+>>>>>>> 737eda0 (test)
 }
 
 
