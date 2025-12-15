@@ -1,0 +1,69 @@
+body {
+    background-color: pink;
+}
+
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    margin-top: -35px;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.hero-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+    color: var(--font-primary-color);
+    font-size: var(--font-size-head);
+    text-align: center;
+}
+
+.hero-text input {
+    width: 100%;
+    max-width: 680px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    padding: 0 18px;
+    font-size: 16px;
+}
+
+.hero-text a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: var(--font-highlight-color);
+    background-color: var(--btn-primary-bg);
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+.hero-text i {
+    margin-left: 10px;
+    padding: 4px;
+    background-color: ;
+}
+
+.hero-text a:hover {
+    background-color: var(--btn-hover);
+}
