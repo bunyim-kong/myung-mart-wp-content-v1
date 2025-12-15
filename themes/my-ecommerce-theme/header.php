@@ -15,8 +15,8 @@
 
         <div class="nav-links">
             <ul>
-                <li><a class="active" href="<?php echo home_url(); ?>">Home</a></li>
-                <li><a href="<?php echo home_url('/category'); ?>">Category</a></li>
+                <li><a href="<?php echo home_url(); ?>">Home</a></li>
+                <li><a href="<?php echo home_url('#category'); ?>">Category</a></li>
                 <li><a href="<?php echo home_url('/products'); ?>">Products</a></li>
                 <li><a href="<?php echo home_url('/about-us'); ?>">About us</a></li>
                 <li><a href="<?php echo home_url('/contact'); ?>">Contacts</a></li>
@@ -30,6 +30,7 @@
         </div>
     </nav>
 
+    <!-- dark mode -->
     <script>
         function toggleTheme() {
         document.body.classList.toggle("dark-mode");

@@ -20,7 +20,7 @@
 </section>
 
 <!-- category-section -->
-<section class="container category-section">
+<section class="container category-section" id="category">
     <h1>Find What Your Skin Needs</h1>
 
     <div class="category-content">

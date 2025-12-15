@@ -37,6 +37,10 @@
             </ul>
         </div>
     </div>
+
+    <div class="footer-copyright">
+        &copy; <?php echo date('Y'); ?> Myung Mart Skincare of Korean. All rights reserved.
+    </div>
 </footer>
 <?php wp_footer(); ?>
 </body></html>
