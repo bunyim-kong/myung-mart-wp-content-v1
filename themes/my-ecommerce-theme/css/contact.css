@@ -1,0 +1,32 @@
+.container{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.container h2{
+    font-size: var(--font-size-head);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.box-form label{
+    font-size: var(--font-size-large);
+    font-family: var(--font-secondary);
+}
+.box-form input, 
+textarea{
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
