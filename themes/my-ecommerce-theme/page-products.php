@@ -31,7 +31,7 @@
             <?php
             $query = new WP_Query([
                 'post_type' => 'product',
-                'posts_per_page' => 12,
+                'posts_per_page' => 18,
             ]);
             ?>
 
