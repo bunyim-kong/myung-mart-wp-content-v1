@@ -16,13 +16,13 @@
 
 <section class="container listing-section">
     <div class="filter">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="skincare">Skincare</button>
-        <button class="filter-btn" data-filter="makeup">Make-up</button>
-        <button class="filter-btn" data-filter="lotion">Lotion</button>
-        <button class="filter-btn" data-filter="scrub">Scrub</button>
-        <button class="filter-btn" data-filter="shampoo">Shampoo</button>
-        <button class="filter-btn" data-filter="perfume">Perfume</button>
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="skincare">Skincare</button>
+        <button class="filter-btn" data-category="make-up">Make-up</button>
+        <button class="filter-btn" data-category="lotion">Lotion</button>
+        <button class="filter-btn" data-category="scrub">Scrub</button>
+        <button class="filter-btn" data-category="shampoo">Shampoo</button>
+        <button class="filter-btn" data-category="perfume">Perfume</button>
     </div>
 
 
@@ -36,30 +36,39 @@
             ?>
 
             <div class="products">
-                <?php while ($query->have_posts()) : $query->the_post(); ?>
-                    <div class="product">
+                <?php while ($query->have_posts()) : $query->the_post();
+
+                    $terms = get_the_terms(get_the_ID(), 'product_category');
+                    $category_slug = '';
+                    if ($terms && !is_wp_error($terms)) {
+                        $category_slug = $terms[0]->slug; // use first category only
+                    }
+                    ?>
+                    <div class="product" data-category="<?php echo esc_attr($category_slug); ?>">
+
                         <div class="product-image">
                             <a href="<?php the_permalink(); ?>">
-                                <?php the_post_thumbnail(''); ?>
-
-                                <span class="stock-badge">
-                                    In Stock
-                                </span>
+                                <?php the_post_thumbnail('medium'); ?>
+                                <span class="stock-badge">In Stock</span>
                             </a>
                         </div>
-                        
+
                         <div class="product-text">
                             <h2><?php the_title(); ?></h2>
-                            <span><?php echo wp_trim_words(get_the_excerpt(),); ?></span>
-                            <p>$<?php echo get_post_meta(get_the_ID(), '_price', true); ?>,00</p>
+                            <span><?php echo wp_trim_words(get_the_excerpt(), 12); ?></span>
+                            <p>$<?php echo get_post_meta(get_the_ID(), '_price', true); ?>.00</p>
                         </div>
 
                         <div class="products-btn">
-                            <a class="btn-cart" href="">Add to cart</a>
-                            <a class="btn-detail" href="<?php the_permalink(); ?>">View Detail <i class="fas fa-arrow-right"></i></a>
+                            <a class="btn-cart" href="#">Add to cart</a>
+                            <a class="btn-detail" href="<?php the_permalink(); ?>">
+                                View Detail <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
+
                     </div>
-                <?php endwhile; ?>
+                <?php endwhile; wp_reset_postdata(); ?>
+                </div>
             </div>
 
             <?php wp_reset_postdata(); ?>
@@ -73,8 +82,8 @@
         <button class="page-btn">3</button>
         <button class="page-btn next">Next »</button>
     </div>
-
-    
 </section>
+
+</script>
 
 <?php get_footer(); ?>

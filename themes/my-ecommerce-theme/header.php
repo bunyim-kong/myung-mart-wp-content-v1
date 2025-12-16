@@ -24,7 +24,7 @@
         </div>
 
         <div class="nav-btn">
-            <a  href="#"><i class="material-symbols-outlined">shopping_bag</i></a>
+            <a  href="<?php echo home_url('cart'); ?>"><i class="material-symbols-outlined">shopping_bag</i></a>
             <a onclick="toggleTheme(); return false;" href="#"><i class="material-symbols-outlined">dark_mode</i></a>
             <a href="#"><i class="material-symbols-outlined">person</i></a>
         </div>

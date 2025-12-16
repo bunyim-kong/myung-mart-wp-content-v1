@@ -24,35 +24,35 @@
     <h1>Find What Your Skin Needs</h1>
 
     <div class="category-content">
-        <div class="category-item">
-            <a href=""><img src="<?php echo get_template_directory_uri() . '/asset/images/category-1.png'; ?>" alt="" /></a>
+        <a href="<?php echo home_url('/products'); ?>" class="category-item">
+            <img src="<?php echo get_template_directory_uri() . '/asset/images/category-1.png'; ?>" alt="" />
             <h1>Skincare</h1>
-        </div>
+        </a>
 
-        <div class="category-item">
+        <a href="<?php echo home_url('/products'); ?>" class="category-item">
             <img src="<?php echo get_template_directory_uri() . '/asset/images/category-2.png'; ?>" alt="" />
             <h1>Lotion</h1>
-        </div>
+        </a>
 
-        <div class="category-item">
+        <a href="<?php echo home_url('/products'); ?>" class="category-item">
             <img src="<?php echo get_template_directory_uri() . '/asset/images/category-3.png'; ?>" alt="" />
             <h1>Scrub</h1>
-        </div>
+        </a>
 
-        <div class="category-item">
+        <a href="<?php echo home_url('/products'); ?>" class="category-item">
             <img src="<?php echo get_template_directory_uri() . '/asset/images/category-4.png'; ?>" alt="" />
             <h1>Make-up</h1>
-        </div>
+        </a>
 
-        <div class="category-item">
+        <a href="<?php echo home_url('/products'); ?>" class="category-item">
             <img src="<?php echo get_template_directory_uri() . '/asset/images/category-6.webp'; ?>" alt="" />
             <h1>Shampoo</h1>
-        </div>
+        </a>
 
-        <div class="category-item">
+        <a href="<?php echo home_url('/products'); ?>" class="category-item">
             <img src="<?php echo get_template_directory_uri() . '/asset/images/category-5.png'; ?>" alt="" />
             <h1>Perfume</h1>
-        </div>
+        </a>
     </div>
 </section>
 
