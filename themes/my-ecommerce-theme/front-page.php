@@ -24,33 +24,45 @@
     <h1>Find What Your Skin Needs</h1>
 
     <div class="category-content">
-        <a href="<?php echo home_url('/products'); ?>" class="category-item">
-            <img src="<?php echo get_template_directory_uri() . '/asset/images/category-1.png'; ?>" alt="" />
+        <a class="category-item" href="<?php echo home_url('/products'); ?>"    >
+            <div class="category-img">
+                <img src="<?php echo get_template_directory_uri() . '/asset/images/category-1.png'; ?>" alt="" />
+            </div>
             <h1>Skincare</h1>
         </a>
 
-        <a href="<?php echo home_url('/products'); ?>" class="category-item">
-            <img src="<?php echo get_template_directory_uri() . '/asset/images/category-2.png'; ?>" alt="" />
+        <a class="category-item" href="<?php echo home_url('/products'); ?>">
+            <div class="category-img">
+                <img src="<?php echo get_template_directory_uri() . '/asset/images/category-2.png'; ?>" alt="" />
+            </div>
             <h1>Lotion</h1>
         </a>
 
-        <a href="<?php echo home_url('/products'); ?>" class="category-item">
-            <img src="<?php echo get_template_directory_uri() . '/asset/images/category-3.png'; ?>" alt="" />
+        <a class="category-item" href="<?php echo home_url('/products'); ?>">
+            <div class="category-img">
+                <img src="<?php echo get_template_directory_uri() . '/asset/images/category-3.png'; ?>" alt="" />
+            </div>
             <h1>Scrub</h1>
         </a>
 
-        <a href="<?php echo home_url('/products'); ?>" class="category-item">
-            <img src="<?php echo get_template_directory_uri() . '/asset/images/category-4.png'; ?>" alt="" />
+        <a class="category-item" href="<?php echo home_url('/products'); ?>">
+            <div class="category-img">
+                <img src="<?php echo get_template_directory_uri() . '/asset/images/category-4.png'; ?>" alt="" />
+            </div>
             <h1>Make-up</h1>
         </a>
 
-        <a href="<?php echo home_url('/products'); ?>" class="category-item">
-            <img src="<?php echo get_template_directory_uri() . '/asset/images/category-6.webp'; ?>" alt="" />
+        <a class="category-item" href="<?php echo home_url('/products'); ?>">
+            <div class="category-img">
+                <img src="<?php echo get_template_directory_uri() . '/asset/images/category-6.webp'; ?>" alt="" />
+            </div>
             <h1>Shampoo</h1>
         </a>
 
-        <a href="<?php echo home_url('/products'); ?>" class="category-item">
-            <img src="<?php echo get_template_directory_uri() . '/asset/images/category-5.png'; ?>" alt="" />
+        <a class="category-item" href="<?php echo home_url('/products'); ?>">
+            <div class="category-img">
+                <img src="<?php echo get_template_directory_uri() . '/asset/images/category-5.png'; ?>" alt="" />
+            </div>
             <h1>Perfume</h1>
         </a>
     </div>
@@ -193,5 +205,54 @@
     </div>
 </section>
 
+
+<section class="testimonial-section">
+    <h2 class="testimonial-title">What Our Customers Say</h2>
+
+    <div class="testimonial-wrapper">
+        <div class="testimonial-card">
+            <p class="testimonial-text">
+                “I’ve been using these Korean skincare products for a month, and my skin has never felt better. Smooth, hydrated, and glowing!”
+            </p>
+            <div class="testimonial-user">
+                <img src="<?php echo get_template_directory_uri(); ?>/asset/images/user-1.jpg" alt="User">
+                <div>
+                    <h4>Senku Ishigami</h4>
+                    <span>Verified Customer</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="testimonial-text">
+                “The quality is amazing and the results are real. Definitely worth every penny. I will keep buying again.”
+            </p>
+            <div class="testimonial-user">
+                <img src="<?php echo get_template_directory_uri(); ?>/asset/images/user-2.jpg" alt="User">
+                <div>
+                    <h4>Gen Asagiri</h4>
+                    <span>Skincare Enthusiast</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="testimonial-text">
+                “Fast delivery, beautiful packaging, and the products work perfectly for sensitive skin like mine.”
+            </p>
+            <div class="testimonial-user">
+                <img src="<?php echo get_template_directory_uri(); ?>/asset/images/user-3.jpg" alt="User">
+                <div>
+                    <h4>Suikaa</h4>
+                    <span>Loyal Customer</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-content">
+        <a href="<?php echo home_url('/products'); ?>">See More <i class="fas fa-arrow-right"></i></a>
+    </div>
+</section>
 
 <?php get_footer(); ?>
