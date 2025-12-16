@@ -4,6 +4,8 @@
 
 <?php get_header(); ?>
 
+
+
 <section class="container contact-section">
      <h2>Let’s get in touch!</h2>
 
