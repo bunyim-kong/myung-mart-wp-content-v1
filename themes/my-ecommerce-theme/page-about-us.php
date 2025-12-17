@@ -53,5 +53,16 @@
         </div>
         
     </section>
+    <section class="subscribe-section">
+    <div class="subscribe-content">
+        <h1>Subscribe to our Newsletter</h1>
+        <p>Sign up for our newsletter and be the first to know about the latest Korean <br>
+         skincare trends, exclusive offers, and expert beauty tips.</p>
 
+        <div class="subscribe-form">
+            <input type="email" placeholder="Enter your email address" />
+            <button type="submit">Subscribe</button>
+        </div>
+    </div>
+</section>
 <?php get_footer(); ?>
