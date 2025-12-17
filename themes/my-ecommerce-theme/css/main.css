@@ -468,3 +468,35 @@
     color: var(--font-primary-color);
 }
 
+
+
+
+
+
+
+
+
+/* mobile-responsive */
+@media screen and (max-width: 768px) {
+    .hero-section {
+        height: 70vh; /* shorter hero */
+        margin-top: 0;
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+        padding: 0 20px;
+    }
+
+    .hero-text input {
+        max-width: 90%;
+        height: 45px;
+        font-size: 13px;
+        padding: 0 16px;
+    }
+
+    .hero-text a {
+        font-size: 14px;
+        padding: 8px 24px;
+    }
+}
