@@ -49,23 +49,70 @@ $stock = get_post_meta(get_the_ID(), '_stock', true);
                skin will feel nourished and revitalized, with a subtle, healthy glow that intensifies over time.
             </p>
 
-            <!-- Quantity / Add Product Buttons -->
             <div class="product-quantity">
-                <button>-</button>
+                <button class="qty-btn minus">−</button>
                 <input type="number" value="1" min="1" />
-                <button>+</button>
+                <button class="qty-btn plus">+</button>
             </div>
 
-            <!-- Add to Cart / Buy Now Buttons -->
             <div class="products-button">
                 <a class="button-cart" href="">Add to cart</a>
                 <a class="button-detail" href="">Check out <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </div>
+</section>
 
+<section class="container testimonial-section-detail">
+    <h2 class="testimonial-title-detail">What Our Customers Say</h2>
 
-    
+    <div class="testimonial-wrapper">
+        <div class="testimonial-card">
+            <p class="testimonial-text">
+                “I’ve been using these Korean skincare products for a month, and my skin has never felt better. Smooth, hydrated, and glowing!”
+            </p>
+            <div class="testimonial-user">
+                <img src="<?php echo get_template_directory_uri(); ?>/asset/images/user-1.jpg" alt="User">
+                <div>
+                    <h4>Senku Ishigami</h4>
+                    <span>Verified Customer</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="testimonial-text">
+                “The quality is amazing and the results are real. Definitely worth every penny. I will keep buying again.”
+            </p>
+            <div class="testimonial-user">
+                <img src="<?php echo get_template_directory_uri(); ?>/asset/images/user-2.jpg" alt="User">
+                <div>
+                    <h4>Gen Asagiri</h4>
+                    <span>Skincare Enthusiast</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="testimonial-text">
+                “Fast delivery, beautiful packaging, and the products work perfectly for sensitive skin like mine.”
+            </p>
+            <div class="testimonial-user">
+                <img src="<?php echo get_template_directory_uri(); ?>/asset/images/user-3.jpg" alt="User">
+                <div>
+                    <h4>Suikaa</h4>
+                    <span>Loyal Customer</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-content">
+        <a href="<?php echo home_url('/testimonial'); ?>">See More <i class="fas fa-arrow-right"></i></a>
+    </div>
+</section>
+
+<section class="container">
     <div class="related-section">
         <h1>Related to</h1>
 

@@ -251,7 +251,7 @@
     </div>
 
     <div class="button-content">
-        <a href="<?php echo home_url('/products'); ?>">See More <i class="fas fa-arrow-right"></i></a>
+        <a href="<?php echo home_url('/testimonial'); ?>">See More <i class="fas fa-arrow-right"></i></a>
     </div>
 </section>
 

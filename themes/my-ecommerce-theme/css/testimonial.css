@@ -1,0 +1,132 @@
+.back-btn {
+    margin-top: 80px;
+}
+
+.back-btn a {
+    text-decoration: none;
+    color: var(--font-primary-color)         ;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.testimonial-hero {
+    padding: 20px 20px 40px;
+    text-align: center;
+}
+
+.testimonial-hero h1 {
+    font-size: 42px;
+    color: var(--font-primary-color);
+    margin-bottom: 15px;
+}
+
+.testimonial-hero p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 16px;
+    color: var(--font-primary-color);
+}
+
+.testimonial-page {
+    margin-top: 60px;
+    margin-bottom: 120px;
+}
+
+.testimonial-comment-line {
+    width: 1240px;
+    margin: 10px auto;
+    margin-bottom: 35px;
+    display: flex;
+    gap: 15px;
+    padding: 12px 18px;
+    border-radius: 50px;
+    background: var(--card-primary-color);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.testimonial-comment-line input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    color: var(--font-primary-color);
+}
+
+.testimonial-comment-line button {
+    border: none;
+    padding: 10px 28px;
+    border-radius: 30px;
+    background: var(--btn-primary-bg);
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.testimonial-comment-line button:hover {
+    background: var(--btn-hover);
+}
+
+
+.testimonial-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: var(--font-primary-color);
+}
+
+.testimonial-wrapper {
+    width: var(--maxw);
+    margin: auto;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+}
+
+.testimonial-card {
+    background: var(--card-primary-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-text {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--font-primary-color);
+    margin-bottom: 25px;
+}
+
+.testimonial-user {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 15px;
+}
+
+.testimonial-user img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-user h4 {
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 5px;
+    color: var(--font-primary-color);
+}
+
+.testimonial-user span {
+    font-size: 13px;
+    color: var(--font-primary-color);
+}
+
