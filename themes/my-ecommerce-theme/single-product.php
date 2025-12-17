@@ -57,7 +57,7 @@ $stock = get_post_meta(get_the_ID(), '_stock', true);
 
             <div class="products-button">
                 <a class="button-cart" href="">Add to cart</a>
-                <a class="button-detail" href="">Check out <i class="fas fa-arrow-right"></i></a>
+                <a class="button-detail" href="<?php echo home_url('payment'); ?>">Check out <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </div>

@@ -30,12 +30,10 @@
         </div>
 
         <!-- menu for mobile -->
-        <div class="mobile-nav">
-            <div class="nav-hamburger" onclick="toggleMobileMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+        <div class="nav-hamburger" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
 
         <!-- mobile Menu -->

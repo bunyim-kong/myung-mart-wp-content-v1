@@ -10,8 +10,7 @@
      <img src="<?php echo get_template_directory_uri() . '/asset/images/hero-section.png'; ?>" alt="" />
 
         <div class="hero-text">
-            <h1>Discover Your Glow with Premium <br>
-                Korean Skincare</h1>
+            <h1>Discover Your Glow with Premium Korean Skincare</h1>
 
             <input type="text" placeholder="Search for products..." />
 
@@ -170,24 +169,24 @@
 
 <!-- uniqueness-section -->
 <section class="unique-section">
-        <div class="unique-content">
-            <div class="top-unique">
-                <h1>Why you should choose us?</h1>
+    <div class="unique-content">
+        <div class="top-unique">
+            <h1>Why you should choose us?</h1>
+        </div>
+        <div class="button-unique">
+            <div class="image-side">
+                <img src="<?php echo get_template_directory_uri() . '/asset/images/unique.png'; ?>" alt="" />
             </div>
+            <div class="text-side">
+                <h1>Premium Quality Products</h1>
+                <p>"Our products are sourced directly from trusted Korean brands, ensuring authenticity and safety. Each item comes from carefully selected sources, so you can trust in its quality and effectiveness. We take pride in bringing you skincare that truly delivers results and care for your skin."</p>
 
-            <div class="button-unique">
-                <div class="image-side">
-                    <img src="<?php echo get_template_directory_uri() . '/asset/images/unique.png'; ?>" alt="" />
-                </div>
-
-                <div class="text-side">
-                    <h1>Premium Quality Products</h1>
-                    <p>"Our products are sourced directly from trusted Korean brands, ensuring authenticity and safety. Each item comes from carefully selected sources, so you can trust in its quality and effectiveness. We take pride in bringing you skincare that truly delivers results and care for your skin."</p>
-
+                <div class="text-side-btn">
                     <a href="">Get to know more <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
+    </div>
 </section>
 
 
@@ -195,7 +194,7 @@
 <section class="subscribe-section">
     <div class="subscribe-content">
         <h1>Subscribe to our Newsletter</h1>
-        <p>Sign up for our newsletter and be the first to know about the latest Korean <br>
+        <p>Sign up for our newsletter and be the first to know about the latest Korean
          skincare trends, exclusive offers, and expert beauty tips.</p>
 
         <div class="subscribe-form">

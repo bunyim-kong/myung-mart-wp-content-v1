@@ -60,7 +60,7 @@
                         </div>
 
                         <div class="products-btn">
-                            <a class="btn-cart" href="#">Add to cart</a>
+                            <a class="btn-cart" href="">Add to cart</a>
                             <a class="btn-detail" href="<?php the_permalink(); ?>">
                                 View Detail <i class="fas fa-arrow-right"></i>
                             </a>
