@@ -15,10 +15,15 @@
     </div>
 </section>
 
-<div class="testimonial-comment-line">
+<div class="subscribe-form">
+    <input type="email" placeholder="Enter your email address" />
+    <button type="submit">Subscribe</button>
+</div>
+
+<!-- <div class="testimonial-comment-line">
     <input type="text" placeholder="Write a review..." />
     <button>Post</button>
-</div>
+</div> -->
 
 
 <section class="container testimonial-section-detail testimonial-page">
@@ -180,3 +185,5 @@
         </div>
     </div>
 </section>
+
+<?php get_footer(); ?>

@@ -1,10 +1,10 @@
 .back-btn {
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .back-btn a {
     text-decoration: none;
-    color: var(--font-primary-color)         ;
+    color: var(--font-primary-color);
     font-size: 16px;
     font-weight: 400;
 }
@@ -27,47 +27,40 @@
     color: var(--font-primary-color);
 }
 
-.testimonial-page {
-    margin-top: 60px;
-    margin-bottom: 120px;
-}
-
-.testimonial-comment-line {
-    width: 1240px;
-    margin: 10px auto;
-    margin-bottom: 35px;
-    display: flex;
-    gap: 15px;
-    padding: 12px 18px;
-    border-radius: 50px;
-    background: var(--card-primary-color);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-}
-
-.testimonial-comment-line input {
+.subscribe-form {
     width: 100%;
-    border: none;
-    outline: none;
-    background: transparent;
-    font-size: 14px;
-    color: var(--font-primary-color);
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.testimonial-comment-line button {
+.subscribe-form input {
+    width: 800px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    padding: 0 20px;
+    font-size: 14px;
+    outline: none;
+}
+
+.subscribe-form button {
+    margin-left: -60px;
+    height: 50px;
+    padding: 0 25px;
+    border-radius: 50px;
     border: none;
-    padding: 10px 28px;
-    border-radius: 30px;
-    background: var(--btn-primary-bg);
-    color: #fff;
+    background-color: var(--btn-primary-bg);
+    color: var(--font-highlight-color);
     font-size: 14px;
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: all 0.2s ease;
 }
 
-.testimonial-comment-line button:hover {
-    background: var(--btn-hover);
+.subscribe-form button:hover {
+    background-color: var(--btn-hover);
 }
-
 
 .testimonial-title {
     font-size: 32px;
@@ -76,13 +69,17 @@
     color: var(--font-primary-color);
 }
 
+
+
 .testimonial-wrapper {
-    width: var(--maxw);
+    width: 100%;
+    max-width: var(--maxw);
     margin: auto;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 80px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 32px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 35px;
 }
 
 .testimonial-card {
@@ -130,3 +127,50 @@
     color: var(--font-primary-color);
 }
 
+
+
+
+
+@media (max-width: 768px) {
+    .back-btn {
+        padding: 0px 20px;
+    }
+    .testimonial-hero h1 {
+        font-size: 36px;
+        color: var(--font-primary-color);
+        margin-bottom: 15px;
+    }
+
+    .testimonial-hero p {
+        margin: auto;
+        font-size: 16px;
+        color: var(--font-primary-color);
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+    }
+
+    .subscribe-form input {
+        width: 95%;
+        max-width: 100%;
+        height: 45px;
+        font-size: 14px;
+        padding: 0 15px;
+        border-radius: 50px;
+    }
+
+    .subscribe-form button {
+        margin-top: 10px;
+        margin-left: 0;
+        width: 95%;
+        height: 45px;
+        font-size: 14px;
+        border-radius: 50px;
+    }
+
+
+    .testimonial-page {
+        padding: 0px 16px;
+    }
+}

@@ -33,7 +33,8 @@
 </section>
 
  <section class="about-us-section2 container">
-        <div class="about-us-content2">
+    <div class="about-us-content">
+        <div class="about-us-txt2">
             <h2>
                 Our Mission
             </h2>
@@ -44,7 +45,8 @@
                 Through transparency, customer care, and a dedication to quality, we strive to help you achieve healthier, happier skin—one product at a time.
             </p>
         </div>
-        <div class="about-us-content2">
+
+        <div class="about-us-txt2">
             <h2>
                 Our Vision
             </h2>
@@ -52,22 +54,21 @@
                 Our vission is to deliver authentic Korean beauty products that people can trust and feel confident using. We aim to make high-quality skincare accessible to everyone by offering safe, verified, and effective items sourced directly from Korea.
                 <br>
                 <br>
-                Through transparency, customer care, and a dedication to quality, we strive to help you achieve healthier, happier skin—one product at a time.            </p>
-            
+                Through transparency, customer care, and a dedication to quality, we strive to help you achieve healthier, happier skin—one product at a time.</p>
         </div>
-        
-    </section>
+    </div>
+</section>
     
-    <section class="subscribe-section">
-        <div class="subscribe-content">
-            <h1>Subscribe to our Newsletter</h1>
-            <p>Sign up for our newsletter and be the first to know about the latest Korean <br>
-            skincare trends, exclusive offers, and expert beauty tips.</p>
-
-            <div class="subscribe-form">
-                <input type="email" placeholder="Enter your email address" />
-                <button type="submit">Subscribe</button>
-            </div>
+<section class="subscribe-section">
+    <div class="subscribe-content">
+        <h1>Subscribe to our Newsletter</h1>
+        <p>Sign up for our newsletter and be the first to know about the latest Korean <br>
+        skincare trends, exclusive offers, and expert beauty tips.</p>
+        <div class="subscribe-form">
+            <input type="email" placeholder="Enter your email address" />
+            <button type="submit">Subscribe</button>
         </div>
-    </section>
+    </div>
+</section>
+
 <?php get_footer(); ?>
